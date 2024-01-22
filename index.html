@@ -3,7 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PH</title>
+    <title>Hokey's Project</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe3168cdf9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body class="font-manrope">
+    <header class="md:container md:mx-auto">
+      <nav>
+        <div class="navbar bg-base-100 lg:px-26 py-11">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a> <span style="color: red">Home</span> </a>
+                </li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <!-- <a class="btn btn-ghost text-xl">Hockey<span style="color: red;">'</span>s</a> -->
+            <a class="btn btn-ghost text-2xl lg:text-3xl font-extrabold"
+              >Hockey<span style="color: red">'</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a> <span style="color: red">Home</span> </a>
+              </li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="lg: navbar-end flex items-center gap-3">
+            <i class="fa-solid fa-magnifying-glass hidden lg:inline-block"></i>
+            <a class="btn bg-red-600 text-zinc-100">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="md:container md:mx-auto">
+      <!-- Banner_section -->
+      <section>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="/Images/1.png" class="w-full p-2" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <!-- <img
+              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full"
+            /> -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <!-- <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            /> -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <!-- <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full"
+            /> -->
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- Black_box -->
+        <div class="card w-96  lg:-mt-36 relative lg:left-96 bg-black shadow-xl">
+       
+          <div class="card-body ">
+            <h2 class="card-title text-yellow-50">Meet all the heroes from the field</h2>
+            <p>Dit amet consectetur. Condimentum. </p>
+            <div class="card-actions justify-end">
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </section>
+
+
+        </div>
+      </div>
+
+    </main>
+    <footer></footer>
+  </body>
 </html>
